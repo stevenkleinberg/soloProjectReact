@@ -1,0 +1,17 @@
+.logo{
+    width: 110px;
+    height: 110px;
+}
+
+.navList{
+    width: max-content;
+    background: gray;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.navItem{
+    list-style: none;
+}
