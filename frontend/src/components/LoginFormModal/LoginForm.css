@@ -1,0 +1,21 @@
+.logInFormDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.logInInput{
+    font-size: 20px;
+}

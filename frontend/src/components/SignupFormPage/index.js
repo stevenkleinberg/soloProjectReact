@@ -29,48 +29,59 @@ function SignupFormPage() {
   };
 
   return (
+    <div className="signUpForm">
     <form onSubmit={handleSubmit}>
-      <ul>
+      <h1>Sign Up</h1>
+      <ul className="errorsList">
         {errors.map((error, idx) => <li key={idx}>{error}</li>)}
       </ul>
-      <label>
+      <label className="signUpLabel">
         Email
         <input
+          className="signUpInput"
           type="text"
           value={email}
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           required
         />
       </label>
-      <label>
+      <label className="signUpLabel">
         Username
         <input
+         className="signUpInput"
           type="text"
           value={username}
+          placeholder="Username"
           onChange={(e) => setUsername(e.target.value)}
           required
         />
       </label>
-      <label>
+      <label className="signUpLabel">
         Password
         <input
+         className="signUpInput"
           type="password"
           value={password}
+          placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
           required
         />
       </label>
-      <label>
+      <label className="signUpLabel">
         Confirm Password
         <input
+         className="signUpInput"
           type="password"
           value={confirmPassword}
+          placeholder="Confirm Password"
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
       </label>
       <button type="submit">Sign Up</button>
     </form>
+    </div>
   );
 }
 
