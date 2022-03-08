@@ -114,7 +114,9 @@ module.exports = (sequelize, DataTypes) => {
 //=====User Model Asociations===
 //==============================
   User.associate = function(models) {
-    // associations can be defined here
+    User.hasMany(models.Chair, {
+      foreignKey: 'userId'
+    });
   };
 
   return User;
